@@ -1,64 +1,56 @@
-<div>
-  <section class="seccionOne">
-    <div class="bg">
-      <div class="sections">
-        <h1>Mkt Digital & Desarrollo Web</h1>
-        <h4>Linkstart mas que una Agencia Digital, será tu Socio</h4>
-        <h4>estratégico para que puedas ir más allá revolucionar </h4>
-        <h4>tu negocio en la era digital con nuestras estrategias</h4>
-        <h4>exclusivas.</h4>
-        <button class="button" type="button" mat-button>MAS INFORMACION</button>
+<div class="row container">
+  <section class="seccion-one">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <h1>{{configuration.seccionOne?.title}}</h1>
+      <button class="button-main">{{configuration.seccionOne.buttons[0].text}}</button>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <div class="common-text" [innerHTML]="configuration.seccionOne?.content"></div>
+      <button class="button-main left-button">{{configuration.seccionOne.buttons[1]?.text}}</button>
+    </div>
+  </section>
+  <section class="seccion-two">
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <h1>{{configuration.seccionTwo?.partOne?.title}}</h1>
+      <div class="common-text partOneContent" [innerHTML]="configuration.seccionTwo?.partOne?.content"></div>
+      <button class="button-main">{{configuration.seccionTwo.partOne.button.text}}</button>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 partTwo">
+    </div>
+  </section>
+  <section class="seccion-tree">
+    <div class="col-lg-6 col-md-12 col-sm-12 partOne">
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 partTwo">
+      <img class="icon" src="../../assets/img/icons/google.png">
+      <h1 class="h1-partTwo">{{configuration.seccionTwo?.partTwo?.title}}</h1>
+      <div class="common-text partTwoContent" [innerHTML]="configuration.seccionTwo?.partTwo?.content"></div>
+      <div class="common-text partTwoContent2" [innerHTML]="configuration.seccionTwo?.partTwo?.content2"></div>
+      <button class="button-main">{{configuration.seccionTwo.partTwo.button.text}}</button>
+    </div>
+  </section>
+  <section class="seccion-four">
+    <div class="col-lg-6 col-md-12 col-sm-12 partOne">
+      <div class="d-flex divOne">
+        <img class="icon" src="../../assets/img/icons/card-shop.png">
+        <h1 class="h1-partTwo">{{configuration.seccionThree?.partTwo?.title}}</h1>
+      </div>
+      <div class="common-text partTwoContent" [innerHTML]="configuration.seccionThree?.partTwo?.content"></div>
+      <button class="button-main">{{configuration.seccionThree.partTwo.button.text}}</button>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 partTwo">
+    </div>
+  </section>
+  <section class="seccion-five">
+    <div class="col-lg-4 col-md-12 col-sm-12 partOne" *ngFor="let item of configuration.seccionFour.cards">
+      <div class="loader">
+        <div class="box-1">
+        </div>
+        <span>
+            {{item.title}}
+        </span>
       </div>
     </div>
   </section>
-  <section>
-    <div class="bg d-flex pt-3">
-      <div class="sections-half-rigth col-lg-6 col-md-6">
-        <div>
-          <h3>Campañas Publiitarias Google</h3>
-          <ul>
-            <li><p>jkhgjhkg</p></li>
-            <li><p>jkhgjhkg</p></li>
-            <li><p>jkhgjhkg</p></li>
-            <li><p>jkhgjhkg</p></li>
-          </ul>
-        </div>
-        <div class="sections-half-button">
-          <ul>
-            <li><p>jkhgjhkg</p></li>
-            <li><p>jkhgjhkg</p></li>
-            <li><p>jkhgjhkg</p></li>
-            <li><p>jkhgjhkg</p></li>
-          </ul>
-        </div>
-        <button class="button" type="button" mat-button>COTIZAR</button>
-      </div>
-      <div class="sections-half-left col-lg-6 col-md-6">
-        <div class="sections-half-top">
-          <h3>Campañas Publiitarias Meta Ads</h3>
-          <p>Facebook & instagram</p>
-        </div>
-        <div class="sections-half-button-left">
-          <ul>
-            <li><p>jkhgjhkg</p></li>
-            <li><p>jkhgjhkg</p></li>
-            <li><p>jkhgjhkg</p></li>
-            <li><p>jkhgjhkg</p></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="bg"></div>
-    <h1>SCROLL MORE TO SEE MORE</h1>
-  </section>
-  <section>
-    <div class="bg"></div>
-    <h1>LOVING THE IMAGES</h1>
-  </section>
-  <section>
-    <div class="bg"></div>
-    <h1>NICE, RIGHT?</h1>
-  </section>
+
 </div>
