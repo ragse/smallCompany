@@ -42,13 +42,49 @@
     </div>
   </section>
   <section class="seccion-five">
-    <div class="col-lg-4 col-md-12 col-sm-12 partOne" *ngFor="let item of configuration.seccionFour.cards">
-      <div class="loader">
-        <div class="box-1">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h1>{{configuration.seccionFour?.title}}</h1>
+      <h2>{{configuration.seccionFour?.subTitle}}</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 d-block col-md-12 col-sm-12 partOne" *ngFor="let item of configuration.seccionFour.cards">
+        <div class="col-lg-12 d-flex">
+          <div class="loader">
+            <div class="box-1">
+            </div>
+            <span>
+                {{item.title}}
+            </span>
+          </div>
         </div>
-        <span>
-            {{item.title}}
-        </span>
+        <div class="content-1 col-lg-12">
+          <p>{{item.content}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="seccion-six">
+    <div class="col-lg-6 col-md-12 col-sm-12 partOne">
+      <h1>{{configuration.seccionFive?.seccionOne?.title}}</h1>
+      <button class="button-main">{{configuration.seccionFive.seccionOne.button.text}}</button>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 partTwo">
+      <div class="main-one">
+        <div class="d-flex mb-3" *ngFor="let item of configuration.seccionFive.seccionOne.content">
+          <img class="img-fix" src="{{item.icon}}"><p>{{item.data}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="seccion-seven">
+    <div class="col-lg-6 col-md-12 col-sm-12 partOne">
+      <h1>{{configuration.seccionSix?.title}}</h1>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 partTwo">
+      <div class="main-one">
+        <div class="d-flex mb-3" *ngFor="let item of configuration.seccionSix.content">
+          <img class="img-fix" src="{{item.icon}}"><p>{{item.data}}</p>
+        </div>
       </div>
     </div>
   </section>

@@ -70,7 +70,24 @@ export const textUser = {
     seccionOne: {
       title: 'Social Media Manejo de Redes Sociales',
       subTitle: 'Manejo de Redes Sociales',
-      content: '<ul><li><span>Planeación Estratégica</span></li><li><span>Diseño de Identidad de Marca</span></li><li><span>Creación de Contenido Multimedia</span></li><li><span>Medición, Análisis y Optimización</span></li></ul>',
+      content: [
+        {
+          icon: '../../assets/img/icons/codigo.png',
+          data: 'Planeación Estratégica'
+        },
+        {
+          icon: '../../assets/img/icons/google.png',
+          data: 'Diseño de Identidad de Marca'
+        },
+        {
+          icon: '../../assets/img/icons/codigo.png',
+          data: 'Creación de Contenido Multimedia'
+        },
+        {
+          icon: '../../assets/img/icons/google.png',
+          data: 'Medición, Análisis y Optimización'
+        }
+      ],
       button: {
         text: 'CONOCER PLANES',
         redirect: ''
@@ -78,7 +95,25 @@ export const textUser = {
     }
   },
   seccionSix: {
-    title: 'Nuestros Objetivos'
+    title: 'Nuestros Objetivos',
+    content: [
+      {
+        icon: '../../assets/img/icons/agreement.png',
+        data: 'Generar mas Clientes Potenciales'
+      },
+      {
+        icon: '../../assets/img/icons/target.png',
+        data: 'Generar la visibilidad correcta'
+      },
+      {
+        icon: '../../assets/img/icons/bar.png',
+        data: 'Despegar tus ventas Online y Offline'
+      },
+      {
+        icon: '../../assets/img/icons/google.png',
+        data: 'Mejorar el rendimiento de tu negocio'
+      }
+    ],
   },
   seccionSeven: {
     title: 'Contactanos Ahora',

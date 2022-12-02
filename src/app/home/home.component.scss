@@ -136,13 +136,103 @@ h1 {
 }
 
 .seccion-five {
-  height: 90%;
-  padding-top: 8rem;
+  height: 80%;
+  padding-top: 6rem;
   display: flex;
   flex-wrap: wrap;
   background-color: #000;
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  h2 {
+    text-align: center;
+    color: #fff;
+  }
   .partOne {
     display: flex;
+    .content-1 {
+      font-size: 1.5rem;
+      color: #fff;
+      padding: 18px 14px 0px 0px;
+    }
+  }
+}
+
+.seccion-six {
+  height: 80%;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+  h1 {
+    font-size: 3rem;
+    padding: 2rem 0px 0px 4rem;
+  }
+  .partOne {
+    background-image: url('../../assets/img/seccion-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .button-main {
+    margin: 23rem 0rem 0px 5rem;
+  }
+  .common-text {
+    padding-top: 10rem;
+    margin-left: 3rem;
+  }
+  .img-fix {
+    width: 6%;
+    margin-left: 10px;
+  }
+  .partTwo {
+    .main-one {
+      margin-top: 27rem;
+      margin-left: 3rem;
+    }
+    color: #fff;
+    p {
+      margin-left: 10px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+}
+
+.seccion-seven {
+  height: 80%;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+  h1 {
+    font-size: 3rem;
+    padding: 2rem 0px 0px 4rem;
+  }
+  .partOne {
+    background-image: url('../../assets/img/objetivos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .common-text {
+    padding-top: 10rem;
+    margin-left: 3rem;
+  }
+  .img-fix {
+    width: 6%;
+    margin-left: 10px;
+  }
+  .partTwo {
+    .main-one {
+      margin-top: 27rem;
+      margin-left: 3rem;
+    }
+    color: #fff;
+    p {
+      margin-left: 10px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
   }
 }
 
@@ -190,13 +280,13 @@ h1 {
 .loader span {
   text-align: center;
   position: absolute;
-  top: 65px;
-  left: 60px;
-  color: black;
+  top: 58px;
+  left: 56px;
+  color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 2px;
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1.5rem;
   animation: text-animate412 3s linear infinite;
 }
 
