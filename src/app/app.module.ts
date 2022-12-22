@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     HomeComponent,
     HeaderComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

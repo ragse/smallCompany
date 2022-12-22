@@ -1,12 +1,12 @@
 <div class="row container">
   <section class="seccion-one">
-    <div class="col-lg-6 col-md-12 col-sm-12">
+    <div class="col-lg-12 col-md-12 col-sm-12">
       <h1>{{configuration.seccionOne?.title}}</h1>
-      <button class="button-main">{{configuration.seccionOne.buttons[0].text}}</button>
-    </div>
-    <div class="col-lg-6 col-md-12 col-sm-12">
       <div class="common-text" [innerHTML]="configuration.seccionOne?.content"></div>
-      <button class="button-main left-button">{{configuration.seccionOne.buttons[1]?.text}}</button>
+      <div class="div-button">
+        <button class="button-main">{{configuration.seccionOne.buttons[0].text}}</button>
+        <button class="button-main">{{configuration.seccionOne.buttons[1]?.text}}</button>
+      </div>
     </div>
   </section>
   <section class="seccion-two">
@@ -30,6 +30,7 @@
     </div>
   </section>
   <section class="seccion-four">
+    <!-- on progress -->
     <div class="col-lg-6 col-md-12 col-sm-12 partOne">
       <div class="d-flex divOne">
         <img class="icon" src="../../assets/img/icons/card-shop.png">
@@ -65,15 +66,14 @@
   </section>
   <section class="seccion-six">
     <div class="col-lg-6 col-md-12 col-sm-12 partOne">
-      <h1>{{configuration.seccionFive?.seccionOne?.title}}</h1>
-      <button class="button-main">{{configuration.seccionFive.seccionOne.button.text}}</button>
+      <div class="d-flex divOne">
+        <h1 class="h1-partTwo">{{configuration.seccionThree?.partTwo?.title}}</h1>
+        <img class="icon" src="../../assets/img/icons/card-shop.png">
+      </div>
+      <div class="common-text partTwoContent" [innerHTML]="configuration.seccionThree?.partTwo?.content"></div>
+      <button class="button-main">{{configuration.seccionThree.partTwo.button.text}}</button>
     </div>
     <div class="col-lg-6 col-md-12 col-sm-12 partTwo">
-      <div class="main-one">
-        <div class="d-flex mb-3" *ngFor="let item of configuration.seccionFive.seccionOne.content">
-          <img class="img-fix" src="{{item.icon}}"><p>{{item.data}}</p>
-        </div>
-      </div>
     </div>
   </section>
   <section class="seccion-seven">

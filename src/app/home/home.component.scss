@@ -8,20 +8,31 @@
     margin-left: 0;
 }
 
+h1 {
+  font-size: 2.5rem !important;
+}
+
+
 .seccion-one {
   background-image: url('../../assets/img/seccion-1.png');
   background-size: cover;
   height: 100%;
-  padding-top: 25rem;
+  padding-top: 14rem;
   display: flex;
   flex-wrap: wrap;
   h1 {
     font-size: 3rem;
     margin-bottom: 9rem;
+    padding-left: 1rem;
   }
   .common-text {
     margin-bottom: 9rem;
-    text-align: end;
+    font-size: 1.9rem;
+    padding-left: 1rem;
+  }
+  .div-button {
+    justify-content: space-around;
+    display: flex;
   }
 }
 
@@ -33,6 +44,11 @@
   background-color: #000;
   .partOneContent{
     // intencional
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem 0 1rem;
   }
   .partTwo {
     background-image: url('../../assets/img/seccion-2.1.jpg');
@@ -57,13 +73,18 @@
 
 .seccion-tree {
   .icon {
-    width: 50px;
+    width: 80px;
+    padding-top: 1rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .h1-partTwo {
     padding-top: 2rem;
+    padding-left: 1.5rem;
+  }
+  .partTwoContent2 {
+    font-size: 1.6rem;
   }
   height: 100%;
   padding-top: 8rem;
@@ -78,11 +99,19 @@
     padding-top: 3rem;
     text-align: end;
     padding-bottom: 4rem;
+    font-size: 1.6rem;
+    padding-right: 1rem;
   }
   .button-main{
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .partTwo {
+    padding-left: 1.5rem;
+  }
+  .common-text {
+    margin-bottom: 1rem;
   }
 }
 .seccion-four {
@@ -109,6 +138,9 @@
   .divOne {
     margin-top: 9rem;
   }
+  .partOne {
+    padding-left: 1.5rem;
+  }
 }
 
 h1 {
@@ -119,8 +151,8 @@ h1 {
 .common-text {
   color: #fff;
   margin-top: 2rem;
-  font-size: 1.2rem;
-  margin-bottom: 5rem;
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
 }
 
 .button-main {
@@ -160,42 +192,31 @@ h1 {
 }
 
 .seccion-six {
-  height: 80%;
-  padding-top: 1rem;
+  height: 90%;
+  padding-top: 8rem;
   display: flex;
   flex-wrap: wrap;
   background-color: #000;
+  .partTwo {
+    background-image: url('../../assets/img/seccion-4-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 700px 803px;
+  }
+  .icon {
+    width: 65px;
+  }
   h1 {
     font-size: 3rem;
-    padding: 2rem 0px 0px 4rem;
-  }
-  .partOne {
-    background-image: url('../../assets/img/seccion-3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-left: 20px;
   }
   .button-main {
-    margin: 23rem 0rem 0px 5rem;
+    margin-top: 70px;
   }
-  .common-text {
-    padding-top: 10rem;
-    margin-left: 3rem;
+  .divOne {
+    margin-top: 9rem;
   }
-  .img-fix {
-    width: 6%;
-    margin-left: 10px;
-  }
-  .partTwo {
-    .main-one {
-      margin-top: 27rem;
-      margin-left: 3rem;
-    }
-    color: #fff;
-    p {
-      margin-left: 10px;
-      margin-top: auto;
-      margin-bottom: auto;
-    }
+  .partOne {
+    padding-left: 1.5rem;
   }
 }
 
@@ -219,12 +240,12 @@ h1 {
     margin-left: 3rem;
   }
   .img-fix {
-    width: 6%;
+    width: 11%;
     margin-left: 10px;
   }
   .partTwo {
     .main-one {
-      margin-top: 27rem;
+      margin-top: 10rem;
       margin-left: 3rem;
     }
     color: #fff;
@@ -232,6 +253,7 @@ h1 {
       margin-left: 10px;
       margin-top: auto;
       margin-bottom: auto;
+      font-size: 1.5rem;
     }
   }
 }
