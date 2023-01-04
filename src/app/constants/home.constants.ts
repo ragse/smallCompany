@@ -21,6 +21,10 @@ export const textUser = {
       button: {
         text: 'CONOCER PLANES',
         redirect: ''
+      },
+      img: {
+        imgOne: '../../assets/img/icons/Facebook.png',
+        imgTwo: '../../assets/img/icons/Instagram.png'
       }
     },
     partTwo: {
@@ -38,6 +42,10 @@ export const textUser = {
       title: 'Desarrollo Web',
       content: '<ul><li>Landing Page</li><li>Sitio Web</li><li>Optimización SEO</li><li>E-commerce</li></ul>',
       component2: 'Realizamos esa página web que tanto has soñado y que cambiará tu negocio para siempre.',
+      button: {
+        text: 'CONOCER PLANES',
+        redirect: ''
+      }
     },
     partTwo: {
       title: 'E-commerce',
@@ -70,24 +78,7 @@ export const textUser = {
     seccionOne: {
       title: 'Social Media Manejo de Redes Sociales',
       subTitle: 'Manejo de Redes Sociales',
-      content: [
-        {
-          icon: '../../assets/img/icons/codigo.png',
-          data: 'Planeación Estratégica'
-        },
-        {
-          icon: '../../assets/img/icons/google.png',
-          data: 'Diseño de Identidad de Marca'
-        },
-        {
-          icon: '../../assets/img/icons/codigo.png',
-          data: 'Creación de Contenido Multimedia'
-        },
-        {
-          icon: '../../assets/img/icons/google.png',
-          data: 'Medición, Análisis y Optimización'
-        }
-      ],
+      content: '',
       button: {
         text: 'CONOCER PLANES',
         redirect: ''
